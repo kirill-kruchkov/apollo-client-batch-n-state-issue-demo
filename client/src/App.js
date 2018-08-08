@@ -6,16 +6,16 @@ import './App.css'
 
 const QUERY_1 = gql`
   query {
-    books {
-      title
+    allLinks {
+      url
     }
   }
 `
 
 const QUERY_2 = gql`
   query {
-    books {
-      author
+    allLinks {
+      description
     }
   }
 `

@@ -14,7 +14,7 @@ import App from './App'
 
 const cache = new InMemoryCache()
 
-const BASE_URL = 'http://localhost:4000'
+const BASE_URL = `http://localhost:${process.env.REACT_APP_GQL_PORT}`
 
 const httpLink = new HttpLink({
   uri: BASE_URL,
